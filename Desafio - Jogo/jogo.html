@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jogo de Cores</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <nav>
+   <a href="index.html" class="voltar"> <button> Voltar </button></a>
+  <h1>Sleeper Game <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-rainbow" viewBox="0 0 16 16">
+    <path d="M8 4.5a7 7 0 0 0-7 7 .5.5 0 0 1-1 0 8 8 0 1 1 16 0 .5.5 0 0 1-1 0 7 7 0 0 0-7-7zm0 2a5 5 0 0 0-5 5 .5.5 0 0 1-1 0 6 6 0 1 1 12 0 .5.5 0 0 1-1 0 5 5 0 0 0-5-5zm0 2a3 3 0 0 0-3 3 .5.5 0 0 1-1 0 4 4 0 1 1 8 0 .5.5 0 0 1-1 0 3 3 0 0 0-3-3zm0 2a1 1 0 0 0-1 1 .5.5 0 0 1-1 0 2 2 0 1 1 4 0 .5.5 0 0 1-1 0 1 1 0 0 0-1-1z"/>
+  </svg></h1>
+</nav>
+
+  <div id="game-container">
+    <div id="level-container">
+      <span id="level-label">Nível:</span>
+      <span id="level">1</span>
+    </div>
+    <div id="target-container">
+      <span id="target-word"></span>
+    </div>
+    <div id="buttons-container">
+      <button class="color-button"></button>
+      <button class="color-button"></button>
+      <button class="color-button"></button>
+      <button class="color-button"></button>
+      <button class="color-button"></button>
+      <button class="color-button"></button>
+      <button class="color-button"></button>
+      <button class="color-button"></button>
+      <button class="color-button"></button>
+    </div>
+    <div id="timer-container">
+      <span id="timer-label">Tempo:</span>
+      <span id="timer">3</span>
+    </div>
+    <button id="start-button">Iniciar</button>
+    <button id="ranking-button">Ver Ranking</button>
+  </div>
+  <div id="score-container">
+    <span id="score-label">Pontuação:</span>
+    <span id="score">0</span>
+  </div>
+  <div id="game-over-container">
+    <h2>Fim de Jogo</h2>
+    <p>Sua pontuação final: <span id="final-score"></span></p>
+    <input type="text" id="player-name" placeholder="Digite seu nome">
+    <button id="save-score-button">Salvar Pontuação</button>
+  </div>
+  <div id="ranking-container">
+
+    <ol id="ranking-list"></ol>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

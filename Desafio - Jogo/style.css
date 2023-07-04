@@ -1,0 +1,121 @@
+/* Estilos para o Jogo de Cores */
+
+
+body {
+  --bs-body-font-family: var(--bs-font-monospace);
+  --bs-body-line-height: 1.4;
+  --bs-body-bg: var(--bs-gray-100);
+  font-size:30px;
+  text-align: center;
+}
+
+nav {
+  background-color: yellowgreen;
+}
+  
+  h1 {
+    color: #333333;
+  }
+  
+  #game-container {
+    margin-top: 50px;
+  }
+  
+  #level-container {
+    margin-bottom: 20px;
+  }
+  
+  #level-label {
+    font-weight: bold;
+  }
+  
+  #target-container{
+    margin-bottom: 20px;
+  }
+  
+  #buttons-container {
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  
+  .color-button{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #timer-container {
+    margin-bottom: 20px;
+  }
+  
+  #timer-label {
+    font-weight: bold;
+  }
+  
+  #start-button{
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  #ranking-button{
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  #score-container{
+    margin-bottom: 20px;
+  }
+  
+  #game-over-container {
+    font-weight: bold;
+  }
+  
+  #game-over-container{
+    display: none;
+    margin-bottom: 20px;
+  }
+  
+  #game-over-container h2 {
+    color: #333333;
+  }
+  
+  #game-over-container p {
+    margin-bottom: 10px;
+  }
+  
+  #container-fim-jogo input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  #save-score-button{
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+  }
+.voltar{
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  visibility: hidden;
+}
+.voltar.visible {
+  visibility: visible;
+}
